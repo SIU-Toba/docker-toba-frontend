@@ -1,7 +1,7 @@
 FROM siutoba/docker-web:latest
 MAINTAINER smarconi@siu.edu.ar
 
-RUN apt-get update && apt-get install -y docker-php-ext-install pcntl
+RUN docker-php-ext-install pcntl
 #--------------------------------------------- NODE Y NVM -----------------------------------------
 #change it to your required node version
 ENV NODE_VERSION 0.10
