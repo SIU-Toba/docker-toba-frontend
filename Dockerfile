@@ -13,6 +13,7 @@ ENV LANG es_AR.UTF-8
 #--------------------------------------------- PHP CONFIG -----------------------------------------
 RUN printf "error_reporting = E_ALL\n" >> /usr/local/etc/php/php.ini
 RUN printf "display_errors=On\n" >> /usr/local/etc/php/php.ini
+RUN printf "output_buffering=4096\n" >> /usr/local/etc/php/php.ini
 
 #--------------------------------------------- NODE Y NVM -----------------------------------------
 #change it to your required node version
